@@ -306,7 +306,7 @@ nav .fa-solid
 {
     #header
     {
-        background-image: url("background phone.jpeg");
+        background-image: url("background\ phone.jpeg");
     }
     .header-text
     {
