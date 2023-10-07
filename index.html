@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <script src="https://kit.fontawesome.com/4706281184.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/Logo.png" width=100px height=100px class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <i class="fa-solid fa-x" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Engineer</p>
+                <h1>Hey, I am <span>SRAJAN MISHRA</span><br>a Computer Science Engineering student<br>from MCKVIE,Liluah</h1>
+            </div>
+        </div>
+    </div>
+                                        <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/my.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="Sub-Title">About Me</h1>
+                    <p> As a Computer Science Engineering student, I am SRAJAN MISHRA, a dedicated and passionate coder and problem solver. My journey in the world of technology has not only honed my technical skills but also cultivated a creative and out-of-the-box thinking approach.<br><br>
+
+                        I possess a versatile skill set, including expertise in game development, data analysis, data visualization, web development, and machine learning. I take pride in my punctuality and the ability to approach challenges with innovative solutions. My dedication to problem-solving knows no bounds.<br><br>
+                        
+                        Beyond the realm of technology, I have a fervent interest in chess, where strategic thinking aligns with my approach to coding. Additionally, I find solace in watching movies, which provides me with a unique perspective on storytelling and creativity.<br><br>
+                        
+                        In essence, I am an aspiring professional in the field of computer science, eager to contribute my skills and ideas to create meaningful solutions and innovations
+                    </p>
+                    <div class="tab_titles">
+                        <p class="tab_links active_link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab_links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab_links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab_contents active_tab" id="skills">
+                        <ul>
+                            <li><span>Game Development</span><br>Designing small-scale games using Unity</li>
+                            <li><span>Web Development</span><br>Web App Development using Figma, HTML, CSS</li>
+                            <li><span>Data Analysis & visualization</span><br>Data analysis, visualization, and prediction model creation using python </li>
+                            <li><span>3D Designing</span><br>Designing 3D using Blender</li>
+                            <li><span>Problem Solving</span><br>4 star Problem Solving badge on HackerRank</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab_contents" id="experience">
+                        <ul>
+                            <li><span>Data Analysis Internship</span><br>Completed Data Analysis online Internship with IBM</li>
+                            <li><span>Web Development Internship</span><br>Completed Web Development Internship with CipherByte Technologies</li>
+                            <li><span>Game Developed</span><br>Developed and uploaded several small scale games with 35+ downloads </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab_contents" id="education">
+                        <ul>
+                            <li><span>B.Tech in Computer Scinece Engineering</span><br>3rd year CSE student at M. C. Kejriwal Vidyapeeth Institute of Engineering</li>
+                            <li><span>ISC Class 12</span><br>Passed Class 12 in 2021 in Science background with aggregate of 93% from M. C. Kejriwal Vidyapeeth School</li>
+                            <li><span>ICSE Class 10</span><br>>Passed Class 10 in 2019 with aggregate of 90% from Holy Family Convent School </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                                                    <!-- Portfolio -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="Sub-Title">My Work</h1>
+            <div class="work_list">
+                <div class="work">
+                    <img src="Images/Work0.png">
+                    <div class="layer">
+                        <h3>BattleShip</h3>
+                        <p>The game is a Retro and survival type where you have to dodge the falling blocks. Download it from itch.io</p>
+                        <a href="https://one-eyed-eagle.itch.io/battle-ship" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/Work1.png">
+                    <div class="layer">
+                        <h3>Shoot Them Up</h3>
+                        <p>The game is a FPS and survival type where you have to kill the enemies and survive as long as you can. Download it from itch.io</p>
+                        <a href="https://one-eyed-eagle.itch.io/shoot-them-up" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/Work2.png">
+                    <div class="layer">
+                        <h3>Personal Portfolio Website</h3>
+                        <p>The website displays my personal portfolio.</p>
+                        <a href="#" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/Work3.png">
+                    <div class="layer">
+                        <h3>Tytanic Sursival Prediction Model</h3>
+                        <p>The data analysis model which predicts on the basis of a person details whether the passenger would have Survived or not.</p>
+                        <a href="https://colab.research.google.com/drive/1XVIJ685ew20gvNXWHOT9o5dh_6uejg9S?usp=sharing" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                                <!-- CONTACT -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact_left">
+                    <h1 class="Sub-Title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>srajanmishra2003@gmail.com</p>
+                    <div class="social-media-icons">
+                        <a href="https://www.facebook.com/srajan.mishra.376"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/srajan-mishra-530a591b0/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="contact_right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email id" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">SUBMIT</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        var tablinks=document.getElementsByClassName("tab_links");
+        var tabcontents=document.getElementsByClassName("tab_contents");
+
+        function opentab(tabname)
+        {
+            for(tablink of tablinks)
+            {
+                tablink.classList.remove("active_link");
+            }
+            for(tabcontent of tabcontents)
+            {
+                tabcontent.classList.remove("active_tab");
+            }
+            event.currentTarget.classList.add("active_link");
+            document.getElementById(tabname).classList.add("active_tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu()
+        {
+            sidemenu.style.right="0";
+        }
+        function closemenu()
+        {
+            sidemenu.style.right="-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw2_h1OAUO8bCxxiO4bqE2XLUMuN7oFtcHAsyJdGe33Jij0jsIEnfbjg-uS_JhiTfUruw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message Sent Successfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
