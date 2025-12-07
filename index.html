@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Personal Portfolio</title>
+<script crossorigin="anonymous" src="https://kit.fontawesome.com/4706281184.js"></script>
+<link href="Style.css" rel="stylesheet"/>
+</head>
+<body>
+<div id="header">
+<div class="container">
+<nav>
+<img class="logo" height="100px" src="Logo.png" width="100px"/>
+<ul id="sidemenu">
+<li><a href="#header">HOME</a></li>
+<li><a href="#about">ABOUT</a></li>
+<li><a href="#portfolio">PORTFOLIO</a></li>
+<li><a href="#contact">CONTACT</a></li>
+<i class="fa-solid fa-x" onclick="closemenu()"></i>
+</ul>
+<i class="fa-solid fa-bars" onclick="openmenu()"></i>
+</nav>
+<div class="header-text">
+<p>AI Engineer</p>
+<h1>Hey, I am <span>SRAJAN MISHRA</span><br/>a Computer Science Engineering graduate<br/>from MCKVIE, Liluah</h1>
+</div>
+</div>
+</div>
+<!-- About Section -->
+<div id="about">
+<div class="container">
+<div class="row">
+<div class="about-col-1">
+<img src="my.jpeg"/>
+</div>
+<div class="about-col-2">
+<h1 class="Sub-Title">About Me</h1>
+<p> As a Computer Science Engineering graduate with a strong foundation in AI-ML, Android App Development, Game Development and Backend Development, I bring a versatile skill set to the table. My strategic thinking, honed through a keen interest in chess, complements my technical expertise, allowing me to approach problems with a unique perspective.<br/><br/>
+
+                        I have gained practical experience in Machine Learning, Deep Learning, Generative AI, Agentic AI, LangChain, LangGraph, VectorDBs, and RAG pipelines through various internships. My dedication to problem-solving and innovative solutions has led me to achieve top performer status in my AI-ML internship and rank among the Top 1000 in GMTK Game Jam 2024.<br/><br/>
+                        
+                        Beyond technology, my passion for chess enhances my strategic thinking, while my interest in creative storytelling keeps me inspired. I am eager to contribute my skills and ideas to create meaningful solutions and innovations in the field of AI and software development.
+                    </p>
+<div class="tab_titles">
+<p class="tab_links active_link" onclick="opentab('skills')">Skills</p>
+<p class="tab_links" onclick="opentab('experience')">Experience</p>
+<p class="tab_links" onclick="opentab('education')">Education</p>
+</div>
+<div class="tab_contents active_tab" id="skills">
+<ul><li><span>GenAI &amp; AI Agents</span><br/>Generative AI, HuggingFace, LLMs, LangGraph, Large Language Models</li><li><span>Machine Learning &amp; Deep Learning</span><br/>Machine Learning, Deep Learning, CNN, AI, NLP, Computer Vision</li><li><span>Vector Databases &amp; RAG</span><br/>ChromaDB, RAG Systems, Vector Databases</li><li><span>Backend Development</span><br/>Backend Development, FastAPI, RESTful APIs</li><li><span>Android App Development</span><br/>Kotlin</li><li><span>Programming Languages</span><br/>C, Dart, Java, Python</li><li><span>Database Management</span><br/>DBMS, Firebase, SQL</li><li><span>Game Development</span><br/>Unity</li><li><span>Tools &amp; Version Control</span><br/>Git</li></ul>
+</div>
+<div class="tab_contents" id="experience">
+<ul><li><span>AI Engineer Intern - Gnanalytica</span><br/>11/2025 - Present</li><li><span>AI/ML Engineer Intern - Promact Infotech</span><br/>02/2025 - 05/2025</li><li><span>Android App Developer Intern - Webskitters Academy</span><br/>01/2024 - 03/2024 | Gained hands-on experience in Android development (Kotlin, XML, Firebase, APIs, Activities, | Fragments). | Developed Quiz and Expense Tracking Android applications</li></ul>
+</div>
+<div class="tab_contents" id="education">
+<ul>
+<li><span>B.Tech in Computer Science &amp; Engineering</span><br/>Graduated in May 2025 from M. C. Kejriwal Vidyapeeth Institute of Engineering (2021-2025)</li>
+<li><span>ISC Class 12</span><br/>Passed Class 12 in 2021 in Science background with aggregate of 93% from M. C. Kejriwal Vidyapeeth School (2020-2021)</li>
+<li><span>ICSE Class 10</span><br/>Passed Class 10 in 2019 with aggregate of 90% from Holy Family Convent School</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Portfolio -->
+<div id="portfolio">
+<div class="container">
+<h1 class="Sub-Title">My Work</h1>
+<div class="work_list"> <div class="work">
+<img src="Vi-Chat.png"/>
+<div class="layer">
+<h3>Vi-Chat</h3>
+<p>Developed an AI chatbot that processes YouTube links or locally uploaded videos by
+extracting audio using Whisper to generate transcripts. The transcripts are embedded and stored in
+ChromaDB, enabling the chatbot to provide video summaries and answer queries with precise context
+awareness.. Built with LangChain, LangGraph, Python, FastAPI, Whisper Model, Mistral (HuggingFace), ChromaDB.</p>
+<a href="" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+</div>
+</div> <div class="work">
+<img src="MockMate logo.jpg"/>
+<div class="layer">
+<h3>MockMate</h3>
+<p>Created an AI-driven interview preparation app that generates customized questions,
+evaluates user answers, and provides feedback scores with improvement suggestions using LLMs and
+agentic workflows.. Built with Android (Kotlin), Python, FastAPI, LLMs, AI Agents, Firebase.</p>
+<a href="#" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+</div>
+</div> <div class="work">
+<img src="RAG.jpg"/>
+<div class="layer">
+<h3>AskRAG</h3>
+<p>Provides context-aware answers for domain-specific queries using Retrieval-Augmented
+Generation, improving response relevance and speed.. Built with Android Development, Python, Kotlin, FastAPI (Backend), LLMs, Embeddings, VectorDB, RAG.</p>
+<a href="#" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+</div>
+</div> <div class="work">
+<img src="ScholarSphere.png"/>
+<div class="layer">
+<h3>ScholarsSphere</h3>
+<p>Built a platform for students to upload, share, and organize academic resources, making
+study materials accessible in one place.. Built with Android Development, Kotlin, Firebase (Auth, Storage, Database).</p>
+<a href="#" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+</div>
+</div> <div class="work">
+<img src="Medassist.png"/>
+<div class="layer">
+<h3>MedAssist</h3>
+<p>Built ML and DL models for predicting Diabetes, Pneumonia, and Diabetic Retinopathy,
+integrated into a healthcare website featuring an interactive AI chatbot for support and explanations.. Built with Python, FastAPI, Random Forest, Gradient Boosting, CNN Models (ResNet, EfficientNet),.</p>
+<a href="#" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+</div>
+</div> <div class="work">
+<img src="WallyCraft.png"/>
+<div class="layer">
+<h3>WallyCraft</h3>
+<p>Developed a cross-platform wallpaper application allowing users to browse, search by
+categories, and download high-quality wallpapers on both phone and PC, with smooth UI and dynamic
+content integration.. Built with Flutter, Dart, Pixels API, Android & Desktop.</p>
+<a href="#" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+</div>
+</div> <div class="work">
+<img src="Endless Escape.jpg"/>
+<div class="layer">
+<h3>Endless Escape</h3>
+<p>Designed a 3D endless-runner game where players navigate obstacles to achieve the highest score, incorporating smooth animations and increasing difficulty. Built with Unity, C#.</p>
+<a href="#" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+</div>
+</div> <div class="work">
+<img src="Shoot Them Up.png"/>
+<div class="layer">
+<h3>Shoot Them Up</h3>
+<p>A 3D PC game developed using Unity and C#. Features engaging gameplay with smooth animations and dynamic difficulty progression.</p>
+<a href="#" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+</div>
+</div> <div class="work">
+<img src="Personal Portfolio Website.png"/>
+<div class="layer">
+<h3>Personal Portfolio Website</h3>
+<p>Developed a responsive portfolio site to showcase projects, achievements, and experience with clean UI/UX and optimized performance. Built with HTML, CSS, JavaScript.</p>
+<a href="#" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+</div>
+</div> <div class="work">
+<img src="TitanicSurvival.jpg"/>
+<div class="layer">
+<h3>Titanic Survival Prediction Model</h3>
+<p>Predicts passenger survival using feature engineering and multiple ML algorithms (Random Forest, Gradient Boosting), optimizing accuracy and model performance.. Built with Python, Pandas, Scikit-learn.</p>
+<a href="https://colab.research.google.com/drive/1XVIJ685ew20gvNXWHOT9o5dh_6uejg9S?usp=sharing" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+</div>
+</div> <div class="work">
+<img src="QuizQuest.png"/>
+<div class="layer">
+<h3>Quiz Quest: Android App</h3>
+<p>Interactive quiz app where users identify national flags through multiple-choice gameplay to enhance geographic knowledge.. Built with Android Studio, Kotlin, XML.</p>
+<a href="https://one-eyed-eagle.itch.io/quizquest" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+</div>
+</div> <div class="work">
+<img src="MoneyMinder.jpeg"/>
+<div class="layer">
+<h3>MoneyMinder: Android Expense Tracker</h3>
+<p>Budgeting app that enables users to manage expenses, set monthly limits, and view financial insights through visual charts.. Built with Android Studio, Kotlin.</p>
+<a href="https://one-eyed-eagle.itch.io/money-minder" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+</div>
+</div></div>
+</div>
+</div>
+<!-- CONTACT -->
+<div id="contact">
+<div class="container">
+<div class="row">
+<div class="contact_left">
+<h1 class="Sub-Title">Contact Me</h1>
+<p><i class="fa-solid fa-paper-plane"></i>srajanmishra2003@gmail.com</p>
+<p><i class="fa-solid fa-phone"></i>9874326511</p>
+<p><i class="fa-solid fa-location-dot"></i>Howrah, West Bengal</p>
+<div class="social-media-icons">
+<a href="https://www.facebook.com/srajan.mishra.376"><i class="fab fa-facebook"></i></a>
+<a href="https://www.linkedin.com/in/srajan-mishra-530a591b0/"><i class="fa-brands fa-linkedin"></i></a>
+</div>
+</div>
+<div class="contact_right">
+<form name="submit-to-google-sheet">
+<input name="Name" placeholder="Your Name" required="" type="text"/>
+<input name="Email" placeholder="Your Email id" required="" type="email"/>
+<textarea name="Message" placeholder="Your Message" required="" rows="6"></textarea>
+<button class="btn btn2" type="submit">SUBMIT</button>
+</form>
+<span id="msg"></span>
+</div>
+</div>
+</div>
+</div>
+<script>
+        var tablinks=document.getElementsByClassName("tab_links");
+        var tabcontents=document.getElementsByClassName("tab_contents");
+
+        function opentab(tabname)
+        {
+            for(tablink of tablinks)
+            {
+                tablink.classList.remove("active_link");
+            }
+            for(tabcontent of tabcontents)
+            {
+                tabcontent.classList.remove("active_tab");
+            }
+            event.currentTarget.classList.add("active_link");
+            document.getElementById(tabname).classList.add("active_tab");
+        }
+    </script>
+<script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu()
+        {
+            sidemenu.style.right="0";
+        }
+        function closemenu()
+        {
+            sidemenu.style.right="-200px";
+        }
+    </script>
+<script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw2_h1OAUO8bCxxiO4bqE2XLUMuN7oFtcHAsyJdGe33Jij0jsIEnfbjg-uS_JhiTfUruw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message Sent Successfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
